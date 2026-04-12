@@ -4,14 +4,13 @@ import { FaRegStar } from "react-icons/fa";
 
 const BookCard = ({book}) => {
     return ( 
-        <Link href={'/'} className="card bg-base-100 shadow-sm">
+        <Link href={`books/${book.bookId}`} className="card bg-base-100 shadow-sm">
             <figure className="p-5 bg-[#f3f3f3]">
                 <Image
                 src={book.image}
                 alt={book.bookName}
                 height={150}
                 width={170}
-                className="h-62.5"
                 />
             </figure>
             <div className="card-body">
