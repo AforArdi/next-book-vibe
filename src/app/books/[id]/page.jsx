@@ -1,6 +1,11 @@
 import BookDetailsBtns from "@/components/BookDetailsBtns";
 import books from "../../../../public/booksData.json";
 
+export const metadata = {
+  title: "Book Details",
+  description: "Simple Book Vibe Application Recreated with Next Js",
+};
+
 const BookDetailsPage = async ({params}) => {
     const {id} = await params;
     const expectedBook = books.find(item=> item.bookId == id);

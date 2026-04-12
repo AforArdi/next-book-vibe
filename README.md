@@ -16,6 +16,16 @@ This is a Next.js version of the [original React Book Vibe project](https://gith
 - Wishlist functionality
 - Responsive design
 
+## Data Fetching in Next.js
+
+Next.js uses Webpack (or Turbo) under the hood. These tools are configured to understand that when they see an import pointing to a `.json` file, they should parse that file and provide its contents as a standard JavaScript object.
+
+### When to Use Fetch
+
+You should only use fetch in Next.js if:
+1. The data is on an external API (like api.github.com)
+2. The data changes frequently and you are fetching it from a database API
+
 ## Related Projects
 
 - **React Version**: Check out the original React implementation [here](https://github.com/AforArdi/react-book-vibe)
