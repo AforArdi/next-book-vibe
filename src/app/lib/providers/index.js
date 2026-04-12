@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import BookProvider from "@/context/BookProvider";
 
