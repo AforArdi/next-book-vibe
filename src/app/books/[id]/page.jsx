@@ -13,7 +13,7 @@ const BookDetailsPage = async ({params}) => {
     // console.log(expectedBook)
 
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = expectedBook;
-
+    
     return ( 
         <div className="container mx-auto my-5">
             <h2 className="font-bold text-3xl text-center">Book Details</h2>
