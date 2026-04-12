@@ -1,10 +1,11 @@
+import AllBooks from "@/components/AllBooks";
 import Banner from "@/components/Banner";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
       <Banner></Banner>
+      <AllBooks></AllBooks>
     </div>
   );
 }
