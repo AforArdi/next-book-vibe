@@ -1,14 +1,7 @@
 import BookChart from '@/components/pagereadchart/BookChart';
+import books from "../../../public/booksData.json";
 
-const booksPromise = async ()=>{
-    const res = await fetch('http://localhost:3000/booksData.json');
-    const data = res.json();
-    return data;
-}
-
-const PagesRead = async () => {
-    const books = await booksPromise();
-
+const PagesRead = () => {
     return (
         <BookChart books={books}></BookChart>
     );

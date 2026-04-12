@@ -1,13 +1,7 @@
 import BookDetailsBtns from "@/components/BookDetailsBtns";
-
-const booksPromise = async ()=>{
-    const res = await fetch('http://localhost:3000/booksData.json');
-    const data = res.json();
-    return data;
-}
+import books from "../../../../public/booksData.json";
 
 const BookDetailsPage = async ({params}) => {
-    const books = await booksPromise();
     const {id} = await params;
     const expectedBook = books.find(item=> item.bookId == id);
     // console.log(expectedBook)

@@ -1,15 +1,7 @@
 import BookCard from "./ui/BookCard";
+import books from "../../public/booksData.json";
 
-const booksPromise = async ()=>{
-    const res = await fetch('http://localhost:3000/booksData.json');
-    const data = res.json();
-    return data;
-}
-
-const AllBooks = async () => {
-    const books = await booksPromise();
-    // console.log(books);
-
+const AllBooks = () => {
     return ( 
         <div className="container mx-auto mb-15">
             <h2 className="font-bold text-4xl text-center">Books</h2>

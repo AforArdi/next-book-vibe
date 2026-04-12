@@ -1,5 +1,7 @@
 # Book Vibe - Next.js Edition
 
+🚀 **Live Project**: https://next-book-vibe.vercel.app/
+
 A Next.js implementation of the popular Book Vibe project, featuring the same great functionality as the original React version with the power and efficiency of Next.js.
 
 ## About This Project
